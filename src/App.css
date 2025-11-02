@@ -1,0 +1,284 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app {
+  text-align: left;
+}
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.architecture-info {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.architecture-info h2 {
+  margin-top: 0;
+}
+
+.architecture-info ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.architecture-info li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.architecture-info li:last-child {
+  border-bottom: none;
+}
+
+.controls {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border: 1px solid #ddd;
+}
+
+.controls h3 {
+  margin-top: 0;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.button-group button {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #646cff;
+  background-color: white;
+  color: #646cff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.button-group button:hover {
+  background-color: #646cff;
+  color: white;
+}
+
+.button-group button.active {
+  background-color: #646cff;
+  color: white;
+}
+
+.current-source {
+  font-weight: bold;
+  color: #646cff;
+  margin: 0;
+}
+
+.controls input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.controls input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.demo-explanation {
+  background-color: #e8f4f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #646cff;
+}
+
+.demo-explanation h3 {
+  margin-top: 0;
+}
+
+.demo-explanation ul {
+  line-height: 1.8;
+}
+
+.user-profile {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 0.5rem;
+}
+
+.user-details {
+  margin-top: 1.5rem;
+}
+
+.user-details p {
+  margin: 0.75rem 0;
+  padding: 0.5rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.user-profile.loading,
+.user-profile.error {
+  text-align: center;
+  padding: 3rem;
+  font-size: 1.2rem;
+}
+
+.user-profile.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+}
+
+.user-profile.loading {
+  color: #646cff;
+}
+
+.code-example {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  border-left: 4px solid #42b883;
+}
+
+.code-example h3 {
+  margin-top: 0;
+}
+
+.code-example pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.user-list {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list h2 {
+  margin-top: 0;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 0.5rem;
+}
+
+.user-count {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.user-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.user-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 0.75rem;
+}
+
+.user-card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.user-id {
+  font-size: 0.85rem;
+  color: #999;
+  font-weight: 500;
+}
+
+.user-card-body p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.user-card-body strong {
+  color: #646cff;
+}
+
+.user-list.loading,
+.user-list.error {
+  text-align: center;
+  padding: 3rem;
+}
+
+.user-list.loading {
+  color: #646cff;
+}
+
+.loading-spinner {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.user-list.error {
+  color: #d32f2f;
+  background-color: #ffebee;
+}
+
+.user-list.error h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .button-group {
+    flex-direction: column;
+  }
+
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+}
