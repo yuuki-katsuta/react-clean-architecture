@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import { createAdapter } from '../adapters/user/adapter';
+import { createAdapter } from '../adapters/user';
 import type { User } from '../domain/user';
 import { httpClient } from '../infra/client';
-import { createClient } from '../infra/drivers/users';
+import { createUserClient } from '../infra/drivers/user';
 import { getUsers } from '../usecase/getUsers';
 
-const client = createClient(httpClient);
+const client = createUserClient(httpClient);
 const adapter = createAdapter(client);
 
 export const useUsers = () => {

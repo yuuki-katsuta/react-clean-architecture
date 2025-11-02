@@ -1,5 +1,5 @@
-import type { UserApiResponse } from '../adapters/user/interface';
 import type { User } from '../domain/user';
+import type { UserApiResponse } from '../infra/drivers/user';
 
 export const toUser = (response: UserApiResponse): User => {
   return {
