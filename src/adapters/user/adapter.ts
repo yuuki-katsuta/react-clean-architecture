@@ -7,10 +7,10 @@ export interface UserAdapter {
   getAll: () => Promise<Result<User[]>>;
 }
 
-export const createAdapter = (driver: Driver): UserAdapter => {
+export const createAdapter = (client: Driver): UserAdapter => {
   const getAll = async (): Promise<Result<User[]>> => {
     try {
-      const response = await driver.getUsers();
+      const response = await client.getUsers();
       const users = response.map(toUser);
       return Ok(users);
     } catch (error) {
