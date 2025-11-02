@@ -1,4 +1,3 @@
 ## clean architecture example with React
 
-<img width="1065" height="583" alt="image" src="https://github.com/user-attachments/assets/2dca0da4-eeec-4c22-a6d1-141049edb3cb" />
-
+<img width="1340" height="603" alt="image" src="https://github.com/user-attachments/assets/d411a16d-de4e-497f-b4f6-7276abf1e940" />
