@@ -6,7 +6,7 @@ import { toUser } from '../presenters/user';
 export const createAdapter = (client: UserDriver): UserRepository => {
   const getAll = async (): Promise<Result<User[]>> => {
     try {
-      const response = await client.getUsers();
+      const response = await client.getAll();
       const users = response.map(toUser);
       return Ok(users);
     } catch (error) {
