@@ -1,3 +1,3 @@
 ## clean architecture example with React
 
-<img width="1195" height="578" alt="image" src="https://github.com/user-attachments/assets/8d257190-1553-4130-8f7b-8937369a776a" />
+<img width="1231" height="583" alt="image" src="https://github.com/user-attachments/assets/10283f08-0aa6-44ef-bc0b-aa2c147dedd8" />
