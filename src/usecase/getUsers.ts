@@ -1,8 +1,7 @@
-import type { UserAdapter } from '../adapters/user/adapter';
-import type { User } from '../domain/user';
+import type { User, UserRepository } from '../domain/user';
 
-export const getUsers = async (adapter: UserAdapter): Promise<User[]> => {
-  const result = await adapter.getAll();
+export const getUsers = async (repository: UserRepository): Promise<User[]> => {
+  const result = await repository.getAll();
   if (result.ok) {
     return result.value;
   } else {

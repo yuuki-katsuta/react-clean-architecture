@@ -1,13 +1,10 @@
 import { Err, Ok, type Result } from '../../domain/result';
-import type { User } from '../../domain/user';
+import type { User, UserRepository } from '../../domain/user';
 import type { Driver } from '../../infra/drivers/users';
 import { toUser } from '../../presenters/user';
 
-export interface UserAdapter {
-  getAll: () => Promise<Result<User[]>>;
-}
-
-export const createAdapter = (client: Driver): UserAdapter => {
+// AdapterがUseCaseの定義したインターフェースを実装（依存性逆転）
+export const createAdapter = (client: Driver): UserRepository => {
   const getAll = async (): Promise<Result<User[]>> => {
     try {
       const response = await client.getUsers();
