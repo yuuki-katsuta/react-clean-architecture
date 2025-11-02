@@ -10,6 +10,6 @@ export const getUsers = async (adapter: UserAdapter): Promise<User[]> => {
   if (result.ok) {
     return result.value;
   } else {
-    throw new Error('Failed to fetch todos');
+    throw new Error('Failed to fetch users');
   }
 };

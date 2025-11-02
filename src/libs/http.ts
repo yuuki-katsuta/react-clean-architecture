@@ -6,7 +6,6 @@ type HTTPResponse<T> = {
 };
 
 export type HTTPClient = {
-  request: <I, O>(method: HTTPMethod, path: string, data?: I) => Promise<HTTPResponse<O>>;
   get: <O>(path: string) => Promise<HTTPResponse<O>>;
   post: <I, O>(path: string, data: I) => Promise<HTTPResponse<O>>;
   patch: <I, O>(path: string, data: I) => Promise<HTTPResponse<O>>;
@@ -57,7 +56,6 @@ export const createHTTPClient = (baseURL: string): HTTPClient => {
   };
 
   return {
-    request,
     get,
     post,
     patch,

@@ -4,7 +4,3 @@ export interface UserApiResponse {
   avatar: string;
   id: string;
 }
-
-export type UserApiClient = {
-  getUsers: () => Promise<UserApiResponse[]>;
-};
