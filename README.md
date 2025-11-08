@@ -4,6 +4,6 @@
 
 ## TODO
 
-- [ ] 依存性の組み立て場所再考（client/adapter）
+- [ ] 依存性の組み立て場所再考（client/adapter） -> context api
 - [ ] FSD 導入
 - [ ] Tanstack Query 導入
